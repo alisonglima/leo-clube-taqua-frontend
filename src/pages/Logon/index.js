@@ -39,6 +39,7 @@ function Logon() {
           <h1>Faça seu logon</h1>
 
           <input
+            type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Seu E-mail"

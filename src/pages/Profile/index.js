@@ -48,7 +48,7 @@ function Profile() {
     <div className="profile-container">
       <header>
         <img src={logoImg} alt="Be The Hero" />
-        <span>Bem vindo(a), {partnerName}</span>
+        <span>Bem vindo(a), {partnerName}.</span>
 
         <button onClick={handleLogout} type="button">
           <FiPower size={18} color="#e02041" />

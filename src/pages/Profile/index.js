@@ -73,14 +73,34 @@ function Profile() {
           </li>
         ))}
       </ul>
+      <div className="data-bank">
+        <h1>
+          Total:{" "}
+          {Intl.NumberFormat("pt-BR", {
+            style: "currency",
+            currency: "BRL",
+          }).format(total)}
+        </h1>
 
-      <h1>
-        Total:{" "}
-        {Intl.NumberFormat("pt-BR", {
-          style: "currency",
-          currency: "BRL",
-        }).format(total)}
-      </h1>
+        <p>
+          Caso deseje pagar por transferência bancária:
+          <br /> Banco: <strong>Caixa</strong> &nbsp;&nbsp;&nbsp; Agência:{" "}
+          <strong>0358</strong>
+          <br /> Operação: <strong>013</strong>
+          <br /> Conta: <strong>00072956-5</strong>
+          <br /> CPF: <strong>354.370.058-81</strong>
+          <br /> Beneficiária: <strong>Flávia Correia</strong>
+          <br />
+          <strong>
+            * Não esqueça de mandar o comprovante no meu whatsapp.
+          </strong>
+          <br />
+          <br />
+          Caso deseje pagar por boleto bancário, cartão de crédito, pessoalmente
+          ou caso tenha qualquer dúvida entre em contato comigo(
+          <strong>Alison</strong>) pelo whatsapp.
+        </p>
+      </div>
     </div>
   );
 }
